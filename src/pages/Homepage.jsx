@@ -11,7 +11,8 @@ import Talk from '../components/Talk'
 
 const Homepage = () => {
   return (
-    <section>
+    <div>
+    
       <Hero />
       <Logos />
       <RecentProjects />
@@ -20,7 +21,8 @@ const Homepage = () => {
       <Services />
       <Talk />
       <Workspace />
-    </section>
+    
+    </div>
   )
 }
 
