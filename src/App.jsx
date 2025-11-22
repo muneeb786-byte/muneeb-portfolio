@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Navbar from './components/Navbar'
 import About from './components/About'
 import Footer from './components/Footer'
@@ -11,14 +11,14 @@ const App = () => {
   return (
     <div className='relative'>
     <Navbar />
-    <main className="bg-[#f9f6ed] min-h-screen w-full text-gray-900 antialiased font-sans selection:bg-orange-200 selection:text-orange-900">
+    <div className="bg-[#f9f6ed] min-h-screen w-full text-gray-900 antialiased font-sans selection:bg-orange-200 selection:text-orange-900">
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
-    </main>
+    </div>
     <Footer />
     </div>
   )
