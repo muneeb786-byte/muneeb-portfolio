@@ -41,7 +41,7 @@ const Navbar = () => {
                     <div className="hidden md:block">
                         <Link
                            className="inline-block px-6 py-2.5 bg-black text-white text-sm font-medium rounded-full hover:bg-gray-800 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5" 
-                            to='/contact'
+                            to='muneeb-portfolio/contact'
                         >
                             Contact  
                         </Link>

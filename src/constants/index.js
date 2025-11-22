@@ -4,9 +4,9 @@ import avater from '../assets/avater.png'
 
 // Navigation Links
 export const nav_links = [
-  { label: 'Home', href: '/' },
-  { label: 'Works', href: '/projects' },
-  { label: 'About', href: '/about' },
+  { label: 'Home', href: 'muneeb-portfolio/' },
+  { label: 'Works', href: 'muneeb-portfolio/projects' },
+  { label: 'About', href: 'muneeb-portfolio/about' },
   
 ];
 

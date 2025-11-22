@@ -13,10 +13,10 @@ const App = () => {
     <Navbar />
     <div className="bg-[#f9f6ed] min-h-screen w-full text-gray-900 antialiased font-sans selection:bg-orange-200 selection:text-orange-900">
       <Routes>
-        <Route path='/' element={<Homepage />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='muneeb-portfolio/' element={<Homepage />} />
+        <Route path='muneeb-portfolio/projects' element={<Projects />} />
+        <Route path='muneeb-portfolio/about' element={<About />} />
+        <Route path='muneeb-portfolio/contact' element={<Contact />} />
       </Routes>
     </div>
     <Footer />
