@@ -1,0 +1,33 @@
+@import "tailwindcss";
+/* Keyframes for infinite scroll */
+@keyframes scroll-infinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Apply to scroll tracks */
+.animate-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: scroll-infinite 20s linear infinite;
+}
+
+.mobile-nav {
+    animation: mobileFadeIn 0.35s ease forwards;
+}
+
+@keyframes mobileFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-12px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
