@@ -1,6 +1,8 @@
 import yo from '../assets/yo.mp4'
 import profile from '../assets/profile.png'
+import profile2 from '../assets/profile2.png'
 import avater from '../assets/avater.png'
+import bghero from '../assets/herobg.png'
 
 // Navigation Links
 export const nav_links = [
@@ -220,5 +222,7 @@ export const faq_data = [
 export{
   yo,
   profile,
-  avater
+  profile2,
+  avater,
+  bghero
 }

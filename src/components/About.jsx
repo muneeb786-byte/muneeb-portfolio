@@ -3,7 +3,7 @@ import { about, yo } from '../constants';
 
 const About = () => {
   return (
-    <section id="about" className="w-full bg-cream pt-28 pb-20 px-4 md:px-8 overflow-hidden relative">
+    <section id="about" className="w-full bg-cream pt-28 max-sm:pt-12 pb-20 px-4 md:px-8 overflow-hidden relative">
 
       {/* Decorative Background Elements */}
       <div className="absolute top-20 right-0 w-64 h-64 bg-yellow-100/50 rounded-full blur-3xl z-0 pointer-events-none" />
@@ -45,7 +45,7 @@ const About = () => {
 
         {/* Right Side: Video */}
         <div className="order-1 lg:order-2 relative">
-          <div className="relative rounded-2xl overflow-hidden shadow-2xl w-auto h-105   group">
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl w-auto h-105 max-sm:h-60   group">
 
             <video
               autoPlay

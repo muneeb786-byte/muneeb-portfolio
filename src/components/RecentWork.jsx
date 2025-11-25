@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const RecentProjects = () => {
     return (
-        <section className="w-full bg-cream pt-16 pb-10 px-4 md:px-8" id="works">
+        <section className="w-full bg-cream pt-16 max-sm:pt-12 pb-10  px-4 md:px-8" id="works">
             <div className="max-w-7xl mx-auto">
 
                 {/* Section Header */}
@@ -45,7 +45,7 @@ const RecentProjects = () => {
                                             </h3>
 
                                             {/* Visit Website */}
-                                            <button className=" border-gray-400 border text-black px-6 py-3 rounded-full text-sm font-semibold uppercase tracking-wide active:bg-[#f1f1f1] hover:bg-[#f1f1f1] bg-white cursor-pointer  transition-colors whitespace-nowrap">
+                                            <button className=" border-gray-400 border text-black px-6 py-3 rounded-full text-sm font-semibold uppercase tracking-wide active:bg-[#f1f1f1] hover:bg-[#f9f6e3] bg-white cursor-pointer  transition-colors whitespace-nowrap">
                                                 View Site
                                             </button>
 

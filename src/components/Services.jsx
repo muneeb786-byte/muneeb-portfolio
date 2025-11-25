@@ -3,7 +3,7 @@ import { service } from '../constants';
 
 const Services = () => {
   return (
-    <section id="services" className="w-full bg-cream pt-24 pb-20 px-4 md:px-8">
+    <section id="services" className="w-full bg-cream pt-24  pb-20 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
 
         {/* Section Header */}

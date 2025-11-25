@@ -1,4 +1,30 @@
 @import "tailwindcss";
+
+.mobile-nav-links {
+            list-style: none;
+            padding: 2rem 1rem;
+        }
+
+        .mobile-nav-links li {
+            margin-bottom: 1rem;
+        }
+
+        .mobile-nav-links a {
+            text-decoration: none;
+            color: #2C2C2C;
+            font-size: 1.55rem;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            display: block;
+            padding: 0.5rem 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .mobile-nav-links a:hover {
+            opacity: 0.6;
+        }
+
 /* Keyframes for infinite scroll */
 @keyframes scroll-infinite {
   0% {

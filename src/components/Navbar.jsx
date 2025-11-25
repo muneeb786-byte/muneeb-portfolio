@@ -18,7 +18,7 @@ const Navbar = () => {
 
     return (
         <div>
-        <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-0 ${isScrolled ? 'bg-[#fafaf184] backdrop-blur-lg py-3  shadow-sm border border-gray-200 rounded-full mx-6 mt-6 ' : 'bg-transparent py-6'}`}>
+        <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-0 ${isScrolled ? 'bg-[#fbf9f4] py-3  shadow-sm border border-gray-200 rounded-full mx-6 mt-6 ' : 'bg-transparent py-6'}`}>
             <div className="max-w-7xl mx-auto px-6">
                 <div className="flex items-center justify-between">
                     <div className="shrink-0">
@@ -41,7 +41,7 @@ const Navbar = () => {
                     {/* CTA Button */}
                     <div className="hidden md:block">
                         <Link
-                            className="inline-block px-6 py-2.5 bg-white text-black border border-gray-400 text-sm font-medium rounded-full hover:bg-slate-950 hover:text-white active:bg-slate-950 active:text-white transition-all duration-300 hover:-translate-y-0.5"
+                            className="inline-block px-6 py-2.5 bg-black text-white border border-gray-400 text-sm font-medium rounded-full hover:bg-white hover:text-black active:bg-slate-950 active:text-white transition-all duration-300 hover:-translate-y-0.5"
                             to='muneeb-portfolio/contact'
                         >
                             Contact
@@ -67,7 +67,7 @@ const Navbar = () => {
         {isOpen && (
                 <div className="bg-[#f9f6ed] mobile-nav fixed z-999 flex flex-col h-screen w-screen border-b border-gray-100 shadow-lg md:hidden  py-4 px-4 space-y-4">
                    
-                    <div className=" flex items-center justify-between border-b border-[#daba63]">
+                    <div className=" flex items-center justify-between border-b pb-4  border-[#d1d1d1]">
                     <div className="shrink-0 py-3 px-2">
                         <a
                             href="#"
@@ -86,24 +86,28 @@ const Navbar = () => {
 
 
                     </div>
-                    
+                    <div className='mobile-nav-links'>
                     {nav_links.map((link) => (
+                        <div>
+                        <ul>
+                        <li><a>
                         <Link to={link.href}
                             key={link.label}
-                            className="text-4xl py-10 text-center font-bold text-gray-900 hover:text-black"
+                            className=""
                             onClick={() => setIsOpen(false)}
                         >
                             {link.label}
-                        </Link>
-                    ))}
-
-                    <Link
+                        </Link> </a></li>
+                    </ul>
+                    
+                    </div>
+                    ))} <Link
                         to='muneeb-portfolio/contact'
-                        className="text-center w-full bg-black text-white py-3 rounded-full font-medium mt-2"
+                        className=""
                         onClick={() => setIsOpen(false)}
                     >
                         Contact
-                    </Link>
+                    </Link> </div>
                 </div>
             )}
 

@@ -4,7 +4,7 @@ import Talk from '../components/Talk';
 
 const Contact = () => {
     return (
-        <div id='talk'>
+        <div id='talk' className='pt-12'>
             <Talk />
             <FAQ />
         </div>

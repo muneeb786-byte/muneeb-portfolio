@@ -4,7 +4,7 @@ import { avater, contact } from '../constants';
 
 const Talk = () => {
     return (
-<section id="contact" className="w-full bg-cream py-24 px-4 md:px-8">
+<section id="contact" className="w-full bg-cream py-24 max-sm:py-13 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
             {/* Header */}
             <div className="mb-12 mt-4">
