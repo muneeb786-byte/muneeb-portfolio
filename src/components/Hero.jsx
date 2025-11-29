@@ -1,8 +1,32 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import TextType from './TextType.jsx';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 import { bghero, hero, profile2 } from '../constants';
 
 const Hero = () => {
+  gsap.registerPlugin(useGSAP);
+  const imgRef = useRef()
+  const textRef = useRef()
+  const descRef = useRef()
+
+  useGSAP(()=>{
+    gsap.from(imgRef.current,{
+     opacity: 0,
+     y:100,
+     duration: 1
+    }
+    ),
+    gsap.from(textRef.current, {
+     x:-370,
+     duration: 1
+    }),
+    gsap.from(descRef.current, {
+    opacity: 0,
+    scale: 0.5,
+     duration: 1
+    })
+  })
     return (
         <section id='home' className="relative min-h-screen w-full overflow-hidden flex flex-col justify-end pt-24 pb-10 md:pb-0">
             {/* Background Gradient Spot */}
@@ -15,6 +39,7 @@ const Hero = () => {
                 <div className="absolute inset-0">
                     <div className="h-full  w-full">
                         <img
+                            ref={imgRef}
                             src={profile2}
                             alt="Portrait of Madison"
                             className="w-full max-md:ml-20 max-sm:ml-30 lg:h-[90vh] max-md:h-[90vh]  object-cover  object-top md:object-contain mix-blend-normal mask-image-gradient"
@@ -30,7 +55,7 @@ const Hero = () => {
 
 
                 {/* Main info */}
-                <div className=" flex flex-col gap-4  z-20 absolute max-md:relative max-sm:mt-5 bottom-6">
+                <div  className=" flex flex-col gap-4  z-20 absolute max-md:relative max-sm:mt-5 bottom-6">
                     <div className="w-fit flex  items-center gap-3 max-sm:gap-0  backdrop-blur-sm pl-2 pr-5  rounded-full shadow-sm border border-white/50">
                         <span className="relative flex h-8 w-8 items-center justify-center rounded-full ">
                             <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-orange-400 opacity-80"></span>
@@ -44,7 +69,7 @@ const Hero = () => {
                         </span>
                     </div>
 
-                    <div className="relative z-20 ">
+                    <div ref={textRef} className="relative z-20 ">
                         <div className="flex flex-col leading-none select-none max-sm:ml-2">
                             <span className="font-display font-bold text-8xl max-sm:text-5xl  drop-shadow-xs  max-md:drop-shadow-gray-300  text-black   uppercase tracking-tighter transform md:translate-y-4">
                                 I AM
@@ -57,8 +82,8 @@ const Hero = () => {
 
                 </div>
 
-                <div className='lbg flex flex-col  gap-13 z-20 absolute  bottom-6 max-md:bottom-0  md:right-25 max-md:left-1 max-md:ml-4   '>
-                    <div className="relative z-20 max-w-[280px] text-left max-md:hidden">
+                <div  className='lbg flex flex-col  gap-13 z-20 absolute  bottom-6 max-md:bottom-0  md:right-25 max-md:left-1 max-md:ml-4   '>
+                    <div ref={descRef} className="relative z-20 max-w-[280px] text-left max-md:hidden">
                         <p className="text-medium font text-gray-800 leading-[1.4]">
                             {hero.description}
                         </p>

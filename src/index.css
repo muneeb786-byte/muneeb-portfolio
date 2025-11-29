@@ -1,5 +1,30 @@
 @import "tailwindcss";
 
+body{
+  overflow-x: hidden;
+}
+
+.experience-section {
+  position: relative;/* hide default cursor */
+}
+
+.cursor-img {
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+  position: fixed;
+  pointer-events: none;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.recent-work-item {
+  cursor: none; 
+  position: relative;
+}
+
+
 .mobile-nav-links {
             list-style: none;
             padding: 2rem 1rem;
