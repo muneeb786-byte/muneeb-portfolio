@@ -33,21 +33,22 @@ const RecentProjects = () => {
                                     <div className="recent-work-item relative md:aspect-4/2 overflow-hidden" onMouseEnter={() => window.dispatchEvent(new Event("cursor-hover-button"))}
                                         onMouseLeave={() => window.dispatchEvent(new Event("cursor-hover-leave"))} >
 
-                                        <div className='absolute w-full h-full bg-transparent z-14 '></div>
+                                        <a href={project.link} target='_blank'><div className='absolute w-full h-full bg-transparent z-14 '> </div> </a>
+                                        
                                         <img
 
                                             src={project.image}
                                             alt={project.title}
                                             className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
                                         />
-
+  
                                     </div>
 
                                     {/* Overlay */}
                                     <div className="flex flex-col justify-end p-6 bg-[#f3efde] ">
 
                                         {/* Slide Up Content */}
-                                        <div><h5 className='text-sm  text-[#e5b850]'>Hotel management website</h5></div>
+                                        <div><h5 className='text-sm  text-[#e5b850]'>{project.category}</h5></div>
 
                                         <div className="flex items-center justify-between pt-2 gap-2 ">
 
@@ -56,9 +57,10 @@ const RecentProjects = () => {
                                             </h3>
 
                                             {/* Visit Website */}
-                                            <button className=" border-gray-400 border text-black px-6 py-3 rounded-full text-sm font-semibold uppercase tracking-wide active:bg-[#f1f1f1] hover:bg-[#f9f6e3] bg-white cursor-pointer  transition-colors whitespace-nowrap">
-                                                View Site
-                                            </button>
+                                            <a href={project.code} target='_blank'>
+                                            <button className=" border-gray-400 border text-black transition-colors px-6 py-3 rounded-full text-sm font-semibold uppercase tracking-wide active:bg-slate-950 hover:bg-slate-950 hover:text-white active:text-white bg-white cursor-pointer whitespace-nowrap">
+                                                View Code
+                                            </button> </a>
 
 
                                         </div>
@@ -75,7 +77,7 @@ const RecentProjects = () => {
                 {/* View All Button */}
                 <div className="flex justify-center w-full">
                     <Link
-                        to="muneeb-portfolio/projects"
+                        to="projects/#works"
                         className="group relative inline-flex items-center gap-3 px-10 py-3 bg-transparent border border-black rounded-full overflow-hidden transition-all duration-300 hover:bg-black active:bg-black hover:text-white active:text-white hover:px-12 hover:shadow-xl"
                     >
                         <span className="font-display font-bold text-lg uppercase tracking-widest">

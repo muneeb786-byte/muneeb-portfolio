@@ -3,6 +3,16 @@ import profile from '../assets/profile.png'
 import profile2 from '../assets/profile2.png'
 import avater from '../assets/avater.png'
 import bghero from '../assets/herobg.png'
+import pj1 from '../assets/pj1.png'
+import pj2 from '../assets/pj2.png'
+import pj3 from '../assets/pj3.png'
+import pj4 from '../assets/pj4.png'
+import ws1 from '../assets/ws1.png'
+import ws2 from '../assets/ws2.png'
+import ws3 from '../assets/ws3.png'
+import ws4 from '../assets/ws4.png'
+import ws5  from '../assets/ws5.png'
+import ws6  from '../assets/ws6.png'
 
 // Navigation Links
 export const nav_links = [
@@ -23,13 +33,14 @@ export const hero = {
 };
 
 export const logos = [
+
   { name: "Figma", icon: "figma" },
+  { name: "React", icon: "atom" },
+  { name: "Next js", icon: "next" },
+  { name: "Mongo db", icon: "mango" },
+  { name: "Node js", icon: "node" },
   { name: "Webflow", icon: "webflow" },
-  { name: "Notion", icon: "notion" },
-  { name: "Linear", icon: "linear" },
-  { name: "Framer", icon: "framer" },
   { name: "Miro", icon: "miro" },
-  { name: "Dribbble", icon: "dribbble" },
   { name: "Relume", icon: "relume" }
 ];
 
@@ -38,31 +49,35 @@ export const logos = [
 export const projects = [
   {
     id: 1,
-    title: "Residing Room App",
-    category: "Mobile Application",
-    image: "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?q=80&w=1000&auto=format&fit=crop",
-    link: "#"
+    title: "Novashop",
+    category: "E Commerce",
+    image: pj1,
+    link: "https://muneeb786-byte.github.io/NovaShop.co/",
+    code: 'https://github.com/muneeb786-byte/NovaShop.co'
   },
   {
     id: 2,
-    title: "Morsel File Manager",
-    category: "UI/UX Design",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
-    link: "#"
+    title: "Aurelia A Luxery Hotel",
+    category: "Hotel Managment",
+    image: pj2,
+    link: "https://muneeb786-byte.github.io/Aurelia/",
+    code: 'https://github.com/muneeb786-byte/Aurelia'
   },
   {
     id: 3,
-    title: "Lumina Smart Home",
-    category: "IoT Interface",
-    image: "https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    link: "#"
+    title: "Nikey",
+    category: "Shoe commerce",
+    image: pj3,
+    link: "https://muneeb786-byte.github.io/Nikey-Shoes-Web/",
+    code: 'https://github.com/muneeb786-byte/Nikey-Shoes-Web'
   },
   {
     id: 4,
-    title: "Apex Finance Dashboard",
-    category: "Web Platform",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
-    link: "#"
+    title: "Gallery",
+    category: "Gallery project",
+    image: pj4,
+    link: "https://muneeb786-byte.github.io/gallery-project/",
+    code: 'https://github.com/muneeb786-byte/gallery-project'
   },
   {
     id: 5,
@@ -153,32 +168,32 @@ export const service = [
 export const workstation = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=800&auto=format&fit=crop",
+    image: ws1,
     alt: "Clean Frontend Developer Desk Setup"
   },
   {
     id: 2,
-    image: "https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: ws2,
     alt: "React & JavaScript Coding Desk"
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=800&auto=format&fit=crop",
+    image: ws3,
     alt: "MERN Stack Dual Monitor Setup"
   },
   {
     id: 4,
-    image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=800&auto=format&fit=crop",
+    image: ws4,
     alt: "Minimal Laptop Setup for Coding"
   },
   {
     id: 5,
-    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop",
+    image: ws5,
     alt: "Team Collaboration Workspace"
   },
   {
     id: 6,
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=800&auto=format&fit=crop",
+    image: ws6,
     alt: "Developer Desk with Macbook"
   }
 ];
@@ -224,5 +239,6 @@ export{
   profile,
   profile2,
   avater,
-  bghero
+  bghero,
+  pj1
 }

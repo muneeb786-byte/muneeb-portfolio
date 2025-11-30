@@ -1,6 +1,6 @@
 import React from 'react';
 import { logos } from '../constants';
-import { LayoutTemplate,  Framer, Figma, PenTool, Hexagon, Box, Layers, Grid } from 'lucide-react';
+import { LayoutTemplate,  Atom, Figma, Leaf, Hexagon, Box, Braces,Grid } from 'lucide-react';
 
 const Logos = () => {
 
@@ -8,11 +8,11 @@ const Logos = () => {
   const getIcon = (name) => {
     switch(name.toLowerCase()) {
       case 'figma': return <Figma size={28} />;
-      case 'framer': return <Framer size={28} />;
+      case 'react': return <Atom size={28} />;
       case 'webflow': return <LayoutTemplate size={28} />;
-      case 'dribbble': return <PenTool size={28} />;
-      case 'linear': return <Layers size={28} />;
-      case 'notion': return <Box size={28} />;
+      case 'mongo db': return <Leaf size={28} />;
+      case 'node js': return <Braces size={28} />;
+      case 'next js': return <Box size={28} />;
       case 'miro': return <Grid size={28} />;
       case 'relume': return <Hexagon size={28} />;
       default: return <Box size={28} />;
@@ -24,8 +24,8 @@ const Logos = () => {
       <div
         className="relative w-full flex overflow-hidden mask-image-gradient"
         style={{
-          maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
-          WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
+          maskImage: 'linear-gradient(to right, transparent, black 3%, black 90%, transparent)',
+          WebkitMaskImage: 'linear-gradient(to right, transparent, black 3%, black 90%, transparent)',
         }}
       >
 
@@ -34,12 +34,12 @@ const Logos = () => {
           {logos.map((brand, index) => (
             <div
               key={`brand-1-${index}`}
-              className="flex items-center gap-3 text-slate-600 hover:text-black transition-colors duration-300 cursor-default group"
+              className="flex items-center gap-3 text-slate-700 hover:text-black transition-colors duration-300 cursor-default group"
             >
               <span className="group-hover:scale-110 transition-transform duration-300">
                 {getIcon(brand.name)}
               </span>
-              <span className="font-display text-2xl font-bold uppercase tracking-widest opacity-80">
+              <span className="font-display text-2xl font-bold uppercase tracking-widest opacity-90">
                 {brand.name}
               </span>
             </div>
@@ -48,7 +48,7 @@ const Logos = () => {
           {logos.map((brand, index) => (
             <div
               key={`brand-1-${index}`}
-              className="flex items-center gap-3 text-slate-600 hover:text-black transition-colors duration-300 cursor-default group"
+              className="flex items-center gap-3 text-slate-700 hover:text-black transition-colors duration-300 cursor-default group"
             >
               <span className="group-hover:scale-110 transition-transform duration-300">
                 {getIcon(brand.name)}

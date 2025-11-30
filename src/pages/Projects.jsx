@@ -3,11 +3,11 @@ import { projects } from '../constants';
 
 const Projects = () => {
     return (
-        <section className="w-full bg-cream pt-24 pb-24 px-4 md:px-8" >
+        <section id="works" className="w-full bg-cream pt-24 pb-24 px-4 md:px-8" >
             <div className="max-w-7xl mx-auto">
 
                 {/* Section Header */}
-                <h2 id="works" className="font-display text-5xl max-md:text-4xl font-bold text-center mb-16 uppercase tracking-tight text-black">
+                <h2  className="font-display text-5xl max-md:text-4xl font-bold text-center mb-16 uppercase tracking-tight text-black">
                     All Projects
                 </h2>
 
@@ -38,13 +38,14 @@ const Projects = () => {
 
                                     <div className="flex items-center justify-between pt-2 gap-2 ">
 
-                                        <h3 className="text-black font-display text-2xl max-sm:text-xl  font-semibold uppercase leading-none tracking-wide">
+                                        <h3 className="text-black transition-colors font-display text-2xl max-sm:text-xl  font-semibold uppercase leading-none tracking-wide">
                                             {project.title}
                                         </h3>
 
                                         {/* Visit Website */}
+                                        <a href={project.code}></a>
                                         <button className=" border-gray-400 border text-black px-6 py-3 rounded-full text-sm font-semibold capitalize tracking-wide active:bg-slate-950 hover:bg-slate-950 active:text-white hover:text-white bg-white cursor-pointer  transition-colors whitespace-nowrap">
-                                            View Site
+                                            View Code
                                         </button>
                                     </div>
                                 </div>

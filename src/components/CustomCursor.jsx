@@ -36,7 +36,7 @@ const CustomCursor = () => {
         };
 
         const handleEnterButton = () => {
-            gsap.to(dot, { opacity: 1, scale: 1, duration: 0.2 });
+            gsap.to(dot, { opacity:1, scale: 1, duration: 0.2 });
             gsap.to(img, { opacity: 0, scale: 0.5, duration: 0.2 });
             setShowButton(true);
             setShowImages(false);
@@ -70,10 +70,10 @@ const CustomCursor = () => {
         <>
             <div
                 ref={dotRef}
-                className="max-md:hidden z-12 flex w-3 h-3 fixed justify-center items-center"
+                className="max-md:hidden z-12 flex w-2.5 h-2.5 fixed justify-center items-center"
             >
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-orange-400 opacity-100"></span>
-                <span className="relative inline-flex w-3 h-3 rounded-full bg-orange-500 justify-center items-center">
+                <span className="relative inline-flex w-2.5 h-2.5 rounded-full bg-orange-500 justify-center items-center">
                     {showButton && (
                         <button className="absolute text-center inset-0 m-auto w-16 h-16 rounded-full bg-white text-orange-500 text-xs font-semibold flex justify-center items-center">
                             View <br /> Site

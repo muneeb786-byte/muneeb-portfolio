@@ -14,14 +14,14 @@ const Workspace = () => {
   {/* Track 1 */}
   <div className="flex animate-scroll">
     {workstation.map(item => (
-      <div key={`a-${item.id}`} className="shrink-0 w-72 md:w-96 mr-6">
-        <img src={item.image} alt={item.alt} className="w-full h-full object-cover rounded-2xl" />
+      <div key={`a-${item.id}`} className="shrink-0 w-160 max-sm:w-100  mr-6 overflow-hidden">
+        <img src={item.image} alt={item.alt} className="w-full h-90 max-sm:h-60 object-cover rounded-2xl " />
       </div>
     ))}
     {/* Duplicate for seamless effect */}
     {workstation.map(item => (
-      <div key={`b-${item.id}`} className="shrink-0 w-72 md:w-96 mr-6">
-        <img src={item.image} alt={item.alt} className="w-full h-full object-cover rounded-2xl" />
+      <div key={`b-${item.id}`} className="shrink-0 w-160 max-sm:w-100   mr-6 overflow-hidden">
+        <img src={item.image} alt={item.alt} className="w-full h-90 max-sm:h-60 object-cover rounded-2xl" />
       </div>
     ))}
   </div>
